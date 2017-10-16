@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VR Project Final.Plugins", "VR Project Final.Plugins.csproj", "{62AE8253-EA4F-B949-E07C-683EABF0920A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VR Project Final", "VR Project Final.csproj", "{FF3E93A3-BE51-D308-E01D-CFABFF4B4948}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VR Project Final.Editor.Plugins", "VR Project Final.Editor.Plugins.csproj", "{D77008FF-9D57-A2C0-B5A0-53031BCAAF3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VR Project Final.Editor", "VR Project Final.Editor.csproj", "{2B7CD89E-9785-FE2C-D6E0-CA2E9E8BF733}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62AE8253-EA4F-B949-E07C-683EABF0920A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62AE8253-EA4F-B949-E07C-683EABF0920A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62AE8253-EA4F-B949-E07C-683EABF0920A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62AE8253-EA4F-B949-E07C-683EABF0920A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF3E93A3-BE51-D308-E01D-CFABFF4B4948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF3E93A3-BE51-D308-E01D-CFABFF4B4948}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF3E93A3-BE51-D308-E01D-CFABFF4B4948}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF3E93A3-BE51-D308-E01D-CFABFF4B4948}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D77008FF-9D57-A2C0-B5A0-53031BCAAF3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D77008FF-9D57-A2C0-B5A0-53031BCAAF3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D77008FF-9D57-A2C0-B5A0-53031BCAAF3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D77008FF-9D57-A2C0-B5A0-53031BCAAF3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B7CD89E-9785-FE2C-D6E0-CA2E9E8BF733}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B7CD89E-9785-FE2C-D6E0-CA2E9E8BF733}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B7CD89E-9785-FE2C-D6E0-CA2E9E8BF733}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B7CD89E-9785-FE2C-D6E0-CA2E9E8BF733}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
