@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 442}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 1161
+  controlID: 156
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -124,7 +124,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 1125
+  controlID: 11
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -380,9 +380,9 @@ MonoBehaviour:
     height: 786
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c24b0000
-    m_LastClickedID: 19394
-    m_ExpandedIDs: 24d7ffff02d8ffff9ed9ffffa6d9ffffd8fbffff00000000a24c0000364d0000be4d0000ea4d0000584f0000
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: d8fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -428,7 +428,7 @@ MonoBehaviour:
   m_MinSize: {x: 277, y: 342}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 1162
+  controlID: 157
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -481,7 +481,7 @@ MonoBehaviour:
     y: 92
     width: 420
     height: 354
-  m_ScrollPosition: {x: 0, y: 241.86761}
+  m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: -160
@@ -581,18 +581,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts
+    - Assets/GoogleVR/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts
+  - Assets/GoogleVR/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\harrivin\Desktop\VR-Project-Final-master\vr-project-final-final\VR-Project-Final-master
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 278}
-    m_SelectedIDs: de270000
-    m_LastClickedID: 10206
+    m_SelectedIDs: de2e0000
+    m_LastClickedID: 11998
     m_ExpandedIDs: 000000009a250000dc250000f42500003e26000014280000342a00004c2a0000722a0000962a0000ee2a00003a2f00006c2f00007430000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -621,7 +621,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000009a250000dc250000f42500003e26000014280000342a00004c2a0000722a0000962a0000ee2a00003a2f00006c2f00007430000000ca9a3bffffff7f
+    m_ExpandedIDs: 000000009a250000dc250000f42500003e26000014280000342a00004c2a0000722a0000962a0000ee2a00003a2f00006c2f000074300000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -646,9 +646,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: c24b0000
-    m_LastClickedInstanceID: 19394
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 523300002e310000202c000052370000783c0000c22500005e260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -673,6 +673,6 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 112}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 154
