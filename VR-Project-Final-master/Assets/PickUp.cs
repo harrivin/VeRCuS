@@ -21,6 +21,16 @@ public class PickUp : MonoBehaviour {
             other.gameObject.SetActive(false);
             pickupcount++;
             Debug.Log(pickupcount);
+            if (pickupcount > 6)
+            {
+                StartCoroutine(waitFiveSeconds());
+                Debug.Log("ALL NODES COLLECTED");
+            }
         }
+    }
+    IEnumerator waitFiveSeconds()
+    {
+        yield return new WaitForSeconds(5);
+        Application.LoadLevel("VR Scene1");
     }
 }
