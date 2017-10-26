@@ -137,6 +137,8 @@
     <Compile Include="Assets\Head.cs" />
     <Compile Include="Assets\PickUp.cs" />
     <Compile Include="Assets\minimap.cs" />
+    <Compile Include="Assets\text1.cs" />
+    <Compile Include="Assets\text2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GoogleVR\Distortion\GvrDistortion.cginc" />
