@@ -46,7 +46,7 @@ public class chase : MonoBehaviour {
             anim.SetBool("isWalking", false);
             anim.SetBool("isAttacking", false);
             pursuing = false;
-        
+       
         }
     }
 }
