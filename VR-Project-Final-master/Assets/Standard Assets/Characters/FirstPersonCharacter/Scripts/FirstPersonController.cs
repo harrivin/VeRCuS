@@ -42,9 +42,22 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private bool m_Jumping;
         private AudioSource m_AudioSource;
 
+
+
+
+        //Animator anim;
+        //public float speed = 10.0f;
+        //public float roationSpeed = 100.0f;
+        ////public GameObject player;
+
         // Use this for initialization
         private void Start()
         {
+            ////player = GameObject.Find("FPSController/Player");
+            //anim = GetComponent<Animator>();
+
+
+
             m_CharacterController = GetComponent<CharacterController>();
             m_Camera = Camera.main;
             m_OriginalCameraPosition = m_Camera.transform.localPosition;
@@ -59,8 +72,43 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
 
         // Update is called once per frame
+        /// <summary>
+        /// 
+        /// </summary>
         private void Update()
         {
+            //float translation = Input.GetAxis("Vertical") * speed;
+            //float straffe = Input.GetAxis("Horizontal") * speed;
+            //translation *= Time.deltaTime;
+            //straffe *= Time.deltaTime;
+
+            //transform.Translate(straffe, 0, translation);
+            //if (Input.GetButton("Fire1"))
+            //{
+            //    anim.SetBool("isAttacking", true);
+            //}
+            //else
+            //{
+            //    anim.SetBool("isAttacking", false);
+            //}
+
+            //if (translation != 0)
+            //{
+            //    anim.SetBool("isWalking", true);
+            //    anim.SetBool("isIdle", false);
+            //}
+            //else
+            //{
+            //    anim.SetBool("isWalking", false);
+            //    anim.SetBool("isIdle", true);
+            //}
+
+
+
+
+
+
+
             RotateView();
             // the jump state needs to read here to make sure it is not missed
             if (!m_Jump)
