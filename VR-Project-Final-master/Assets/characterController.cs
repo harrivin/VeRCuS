@@ -6,6 +6,7 @@ public class characterController : MonoBehaviour {
     Animator anim1;
     public float speed = 10.0f;
     public float roationSpeed = 100.0f;
+    public GameObject sphere;
 
    // public GameObject player;
 
@@ -30,23 +31,35 @@ public class characterController : MonoBehaviour {
         if (Input.GetButton("Fire1"))
         {
             anim1.SetBool("isAttacking", true);
-           
+          
         }
         else
         {
             anim1.SetBool("isAttacking", false);
+           
         }
 
         if (translation != 0)
         {
             anim1.SetBool("isWalking", true);
             anim1.SetBool("isIdle", false);
+            
         }
         else
         {
             anim1.SetBool("isWalking", false);
             anim1.SetBool("isIdle", true);
+          
         }
-
+        if (anim1.GetBool("isAttacking") == true)
+        {
+            Debug.Log("attacking");
+            sphere.SetActive(true);
+        }
+        else
+        {
+            Debug.Log("notattacking");
+            sphere.SetActive(false);
+        }
     }
 }
