@@ -6,6 +6,10 @@ public class chase : MonoBehaviour {
 
     public Transform player;
     public Transform head;
+
+    public UnityEngine.AI.NavMeshAgent agent;
+    public GameObject opponent;
+
     Animator anim;
     //bool pursuing = false;
 
@@ -19,6 +23,8 @@ public class chase : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
+        opponent = GameObject.Find("FPSController");
+       agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
 	}
 
     // Update is called once per frame
@@ -32,7 +38,7 @@ public class chase : MonoBehaviour {
         {
             anim.SetBool("isIdle", false);
             anim.SetBool("isWalking", true);
-            if(Vector3.Distance(waypoints[currentWP].transform.position, transform.position) < accuracyWP)
+            if (Vector3.Distance(waypoints[currentWP].transform.position, transform.position) < accuracyWP)
             {
                 currentWP = Random.Range(0, waypoints.Length);
                 //currentWP++;
@@ -41,15 +47,16 @@ public class chase : MonoBehaviour {
                 //    currentWP = 0;
                 //}
             }
-            direction = waypoints[currentWP].transform.position - transform.position;
-            this.transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), rotspeed * Time.deltaTime);
-            this.transform.Translate(0, 0, Time.deltaTime * speed);
+            agent.SetDestination(waypoints[currentWP].transform.position);
+            //direction = waypoints[currentWP].transform.position - transform.position;
+            //this.transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), rotspeed * Time.deltaTime);
+            //this.transform.Translate(0, 0, Time.deltaTime * speed);
         }
 
         if (Vector3.Distance(player.position, this.transform.position) < 10 && (angle < 30 || state=="pursuing"))
         {
             state = "pursuing";
-
+            agent.SetDestination(opponent.transform.position);
             this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), rotspeed * Time.deltaTime);
 
             //anim.SetBool("isIdle", false);
