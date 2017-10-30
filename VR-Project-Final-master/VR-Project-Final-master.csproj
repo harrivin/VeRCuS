@@ -136,6 +136,7 @@
     <Compile Include="Assets\GoogleVR\Scripts\VRDevices\iOSDevice.cs" />
     <Compile Include="Assets\Head.cs" />
     <Compile Include="Assets\PickUp.cs" />
+    <Compile Include="Assets\camerafacingbillboard.cs" />
     <Compile Include="Assets\characterController.cs" />
     <Compile Include="Assets\chase.cs" />
     <Compile Include="Assets\detecthit.cs" />

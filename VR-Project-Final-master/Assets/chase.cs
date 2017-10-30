@@ -38,9 +38,9 @@ public class chase : MonoBehaviour {
         {
             StartCoroutine(waitDeath());
             StopCoroutine(waitDeath());
-
-            //this.gameObject.SetActive = false;
             return;
+            //this.gameObject.SetActive = false;
+
         }
 
         Vector3 direction = player.position - this.transform.position;
@@ -100,7 +100,7 @@ public class chase : MonoBehaviour {
     }
     IEnumerator waitDeath()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
         gameObject.SetActive(false);
     }
 }
