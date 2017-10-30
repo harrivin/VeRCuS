@@ -141,6 +141,7 @@
     <Compile Include="Assets\chase.cs" />
     <Compile Include="Assets\detecthit.cs" />
     <Compile Include="Assets\minimap.cs" />
+    <Compile Include="Assets\pickupsphere.cs" />
     <Compile Include="Assets\text1.cs" />
     <Compile Include="Assets\text2.cs" />
   </ItemGroup>

@@ -17,6 +17,9 @@ public class PickUp : MonoBehaviour {
     public GameObject text2;
     Text txt1;
     Text txt2;
+    public int collected;
+
+    
 
     // Use this for initialization
     void Start () {
@@ -32,6 +35,7 @@ public class PickUp : MonoBehaviour {
         text2 = GameObject.Find("FPSController/Canvas/Text2");
         txt1 = text1.GetComponent<Text>();
         txt2 = text2.GetComponent<Text>();
+        
     }
 
     // Update is called once per frame
@@ -44,6 +48,9 @@ public class PickUp : MonoBehaviour {
         if (other.gameObject==sphere)
         {
             sphere.SetActive(false);
+            pickupsphere.collected = 0;
+            pickupsphere pus = sphere.GetComponent<pickupsphere>();
+            pus.collected1 = 1;
             txt1.text = "Kill 0";
             txt2.text = "to get full health";
             pickupcount++;
@@ -55,6 +62,9 @@ public class PickUp : MonoBehaviour {
         else if (other.gameObject==sphere1)
         {
             sphere1.SetActive(false);
+            pickupsphere.collected = 1;
+            pickupsphere pus1 = sphere1.GetComponent<pickupsphere>();
+            pus1.collected1 = 1;
             txt1.text = "Kill 1";
             txt2.text = "to get full health";
             pickupcount++;
@@ -66,6 +76,9 @@ public class PickUp : MonoBehaviour {
         else if (other.gameObject==sphere2)
         {
             sphere2.SetActive(false);
+            pickupsphere.collected = 2;
+            pickupsphere pus2 = sphere2.GetComponent<pickupsphere>();
+            pus2.collected1 = 1;
             txt1.text = "Kill 2";
             txt2.text = "to get full health";
             pickupcount++;
@@ -77,6 +90,9 @@ public class PickUp : MonoBehaviour {
         else if (other.gameObject==sphere3)
         {
             sphere3.SetActive(false);
+            pickupsphere.collected = 3;
+            pickupsphere pus3 = sphere3.GetComponent<pickupsphere>();
+            pus3.collected1 = 1;
             txt1.text = "Kill 3";
             txt2.text = "to get full health";
             pickupcount++;
@@ -88,6 +104,9 @@ public class PickUp : MonoBehaviour {
         else if (other.gameObject==sphere4)
         {
             sphere4.SetActive(false);
+            pickupsphere.collected = 4;
+            pickupsphere pus4 = sphere4.GetComponent<pickupsphere>();
+            pus4.collected1 = 1;
             txt1.text = "Kill 4";
             txt2.text = "to get full health";
             pickupcount++;
@@ -99,6 +118,9 @@ public class PickUp : MonoBehaviour {
         else if (other.gameObject==sphere5)
         {
             sphere5.SetActive(false);
+            pickupsphere.collected = 5;
+            pickupsphere pus5 = sphere5.GetComponent<pickupsphere>();
+            pus5.collected1 = 1;
             txt1.text = "Kill 5";
             txt2.text = "to get full health";
             pickupcount++;
@@ -110,6 +132,9 @@ public class PickUp : MonoBehaviour {
         else if (other.gameObject==sphere6)
         {
             sphere6.SetActive(false);
+            pickupsphere.collected = 6;
+            pickupsphere pus6 = sphere6.GetComponent<pickupsphere>();
+            pus6.collected1 = 1;
             txt1.text = "Kill 6";
             txt2.text = "to get full health";
             pickupcount++;

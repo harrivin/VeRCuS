@@ -53,12 +53,12 @@ public class characterController : MonoBehaviour {
         }
         if (anim1.GetBool("isAttacking") == true)
         {
-            Debug.Log("attacking");
+            //Debug.Log("attacking");
             sphere.SetActive(true);
         }
         else
         {
-            Debug.Log("notattacking");
+            //Debug.Log("notattacking");
             sphere.SetActive(false);
         }
     }
