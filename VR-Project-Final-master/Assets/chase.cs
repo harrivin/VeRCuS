@@ -8,6 +8,10 @@ public class chase : MonoBehaviour {
     public Transform player;
     public Transform head;
     public GameObject sphere;
+    public GameObject enemy1;
+    public GameObject enemy2;
+
+    public string enemynumber;
 
     public Slider healthbar;
 
@@ -29,6 +33,7 @@ public class chase : MonoBehaviour {
         anim = GetComponent<Animator>();
         opponent = GameObject.Find("FPSController");
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+  
 	}
 
     // Update is called once per frame
@@ -38,6 +43,10 @@ public class chase : MonoBehaviour {
         {
             StartCoroutine(waitDeath());
             StopCoroutine(waitDeath());
+            enemy1.transform.parent = null;
+            enemy1.SetActive(true);
+            enemy2.transform.parent = null;
+            enemy2.SetActive(true);
             return;
             //this.gameObject.SetActive = false;
 

@@ -110,7 +110,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 442}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 110
+  controlID: 11
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 59
+  controlID: 12
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -153,8 +153,8 @@ MonoBehaviour:
     y: 0
     width: 701
     height: 408
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -391,14 +391,14 @@ MonoBehaviour:
     width: 699
     height: 387
   m_SceneLighting: 1
-  lastFramingTime: 828.6592049574488
+  lastFramingTime: 2305.382913979117
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -25, y: 1, z: -15}
+    m_Target: {x: -25, y: 1.2081957, z: 29.689585}
     speed: 2
-    m_Value: {x: -25, y: 1, z: -15}
+    m_Value: {x: -25, y: 1.2081957, z: 29.689585}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -425,9 +425,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_Size:
-    m_Target: 132.36726
+    m_Target: 9.993471
     speed: 2
-    m_Value: 132.36726
+    m_Value: 9.993471
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -540,10 +540,10 @@ MonoBehaviour:
     width: 302
     height: 770
   m_TreeViewState:
-    scrollPos: {x: 0, y: 927}
-    m_SelectedIDs: f4380000
-    m_LastClickedID: 14580
-    m_ExpandedIDs: d8fbffff0000000068330000ac36000000370000
+    scrollPos: {x: 0, y: 1547}
+    m_SelectedIDs: d8360000
+    m_LastClickedID: 14040
+    m_ExpandedIDs: 22d9fbff58d9fbff34dffbff6adffbff4ae5fbff80e5fbff52ebfbff88ebfbff36f2fbff6cf2fbffb8f8fbffeef8fbffc825ffff1a27ffffe829ffff602bffffaea2ffffa8ecffffd8fbffff00000000c832000068330000043400001a3400007c3400006a3500009a350000d8360000163800007e38000096380000c8380000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -592,7 +592,7 @@ MonoBehaviour:
     y: 100
     width: 415
     height: 347
-  m_ScrollPosition: {x: 0, y: 148.95508}
+  m_ScrollPosition: {x: 0, y: 300}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: -160
@@ -702,7 +702,7 @@ MonoBehaviour:
   m_LastProjectPath: C:\Users\harrivin\Desktop\VR-Project-Final-master\vr-project-final-final\VR-Project-Final-master
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 111}
+    scrollPos: {x: 0, y: 120}
     m_SelectedIDs: aa250000
     m_LastClickedID: 9642
     m_ExpandedIDs: 00000000aa250000ee250000062600005026000028280000482a0000602a0000882a0000ac2a0000062b0000fc2e0000582f00008a2f00009230000000ca9a3bffffff7f
@@ -785,6 +785,6 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 153.5}
+    m_ScrollPosition: {x: 0, y: 230.5}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 154
