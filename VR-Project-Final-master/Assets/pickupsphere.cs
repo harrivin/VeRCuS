@@ -15,9 +15,6 @@ public class pickupsphere : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (collected == 1)
-        {
-            Debug.Log(spherenumber + "collected");
-        }
+
 	}
 }
