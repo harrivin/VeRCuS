@@ -23,7 +23,7 @@ public class CountDownTimer : MonoBehaviour
         {
             StopCoroutine("LoseTime");
             countdownText.text = "Times Up!";
-            Application.LoadLevel("VR Scene1");
+            Application.LoadLevel("VR Scene 2");
         }
     }
 

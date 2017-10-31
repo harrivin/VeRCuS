@@ -152,7 +152,7 @@ public class PickUp : MonoBehaviour {
     IEnumerator waitFiveSeconds()
     {
         yield return new WaitForSeconds(5);
-        Application.LoadLevel("VR Scene1");
+        Application.LoadLevel("VR Scene 2");
     }
     IEnumerator waitTextSeconds()
     {
