@@ -10,6 +10,7 @@ public class chase : MonoBehaviour {
     public GameObject sphere;
     public GameObject enemy1;
     public GameObject enemy2;
+    public string opponent1;
 
     public string enemynumber;
 
@@ -28,17 +29,44 @@ public class chase : MonoBehaviour {
     public float speed = 1.5f;
     float accuracyWP = 5.0f;
 
-	// Use this for initialization
-	void Start () {
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag != opponent1) return;
+
+        healthbar.value -= 25;
+        Debug.Log("Hit");
+        Vector3 direction1 = player.position - this.transform.position;
+        direction1.y = 0;
+        //float angle = Vector3.Angle(direction1, head.up);
+        //state = "pursuing";
+        agent.SetDestination(opponent.transform.position);
+        this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction1), rotspeed * Time.deltaTime);
+
+        if (healthbar.value <= 0)
+        {
+            anim.SetBool("isDead", true);
+        }
+    }
+    // Use this for initialization
+    void Start () {
         anim = GetComponent<Animator>();
+        state = "patrol";
         opponent = GameObject.Find("FPSController");
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+        anim.speed = 1.5f;
   
 	}
 
     // Update is called once per frame
     void Update()
     {
+        //if(healthbar.value == healthbar.value-25)
+        //{
+        //    Vector3 direction1 = player.position - this.transform.position;
+        //    direction1.y = 0;
+        //    float angle1 = Vector3.Angle(direction1, head.up);
+        //}
         if (healthbar.value <= 0)
         {
             StartCoroutine(waitDeath());
@@ -109,7 +137,7 @@ public class chase : MonoBehaviour {
     }
     IEnumerator waitDeath()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         gameObject.SetActive(false);
     }
 }

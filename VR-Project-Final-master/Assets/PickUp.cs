@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 
 public class PickUp : MonoBehaviour {
-    public int pickupcount;
+    public static int pickupcount;
     public GameObject sphere;
     public GameObject sphere1;
     public GameObject sphere2;
@@ -54,6 +54,7 @@ public class PickUp : MonoBehaviour {
             txt1.text = "Kill 0";
             txt2.text = "to get full health";
             pickupcount++;
+            score.scoreg += 1000;
             StartCoroutine(waitTextSeconds());
             Debug.Log(pickupcount);
             Debug.Log("sphere");
@@ -68,6 +69,7 @@ public class PickUp : MonoBehaviour {
             txt1.text = "Kill 1";
             txt2.text = "to get full health";
             pickupcount++;
+            score.scoreg += 1000;
             StartCoroutine(waitTextSeconds());
             Debug.Log(pickupcount);
             Debug.Log("sphere1");
@@ -82,6 +84,7 @@ public class PickUp : MonoBehaviour {
             txt1.text = "Kill 2";
             txt2.text = "to get full health";
             pickupcount++;
+            score.scoreg += 1000;
             StartCoroutine(waitTextSeconds());
             Debug.Log(pickupcount);
             Debug.Log("sphere2");
@@ -96,6 +99,7 @@ public class PickUp : MonoBehaviour {
             txt1.text = "Kill 3";
             txt2.text = "to get full health";
             pickupcount++;
+            score.scoreg += 1000;
             StartCoroutine(waitTextSeconds());
             Debug.Log(pickupcount);
             Debug.Log("sphere3");
@@ -110,6 +114,7 @@ public class PickUp : MonoBehaviour {
             txt1.text = "Kill 4";
             txt2.text = "to get full health";
             pickupcount++;
+            score.scoreg += 1000;
             StartCoroutine(waitTextSeconds());
             Debug.Log(pickupcount);
             Debug.Log("sphere4");
@@ -124,6 +129,7 @@ public class PickUp : MonoBehaviour {
             txt1.text = "Kill 5";
             txt2.text = "to get full health";
             pickupcount++;
+            score.scoreg += 1000;
             StartCoroutine(waitTextSeconds());
             Debug.Log(pickupcount);
             Debug.Log("sphere5");
@@ -138,6 +144,7 @@ public class PickUp : MonoBehaviour {
             txt1.text = "Kill 6";
             txt2.text = "to get full health";
             pickupcount++;
+            score.scoreg += 1000;
             StartCoroutine(waitTextSeconds());
             Debug.Log(pickupcount);
             Debug.Log("sphere6");
@@ -152,7 +159,7 @@ public class PickUp : MonoBehaviour {
     IEnumerator waitFiveSeconds()
     {
         yield return new WaitForSeconds(5);
-        Application.LoadLevel("VR Scene 2");
+        Application.LoadLevel("VR Scene 1");
     }
     IEnumerator waitTextSeconds()
     {

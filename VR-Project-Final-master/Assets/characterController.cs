@@ -17,6 +17,8 @@ public class characterController : MonoBehaviour {
         //player = GameObject.Find("FPSController/Player");
 
         anim1 = GetComponent<Animator>();
+        anim1.speed = 1.5f;
+
     }
 
     // Update is called once per frame
