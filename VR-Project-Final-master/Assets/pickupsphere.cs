@@ -12,9 +12,25 @@ public class pickupsphere : MonoBehaviour {
 	void Start () {
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
 
-	}
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+    public void pickupspheree()
+    {
+        Debug.Log("enter function");
+        if(Input.GetButton("Fire1"))
+        {
+            this.gameObject.SetActive(false);
+            Debug.Log("clicking");
+
+        }
+        else
+        {
+            Debug.Log("not clicking");
+            this.gameObject.SetActive(true);
+        }
+    }
 }
