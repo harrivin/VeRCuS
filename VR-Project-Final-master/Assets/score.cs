@@ -11,12 +11,16 @@ public class score : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         text = GetComponent<Text>();
-        scoreg = 0;
+        
 
 	}
-	
-	// Update is called once per frame
-	void Update () {
+    void OnLevelWasLoaded(int level)
+    {
+        if (level == 0)
+            scoreg = 0;
+    }
+        // Update is called once per frame
+        void Update () {
         text.text = "Score : " + scoreg;
 	}
 }

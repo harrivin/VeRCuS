@@ -24,6 +24,7 @@ public class detecthit : MonoBehaviour {
         if (healthbar.value <= 0)
         {
             anim.SetBool("isDead", true);
+            StartCoroutine("Dead");
         }
     }
 
@@ -35,6 +36,14 @@ public class detecthit : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+
 	}
+    IEnumerator Dead()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(1);
+            Application.LoadLevel("GO Scene");
+        }
+    }
 }

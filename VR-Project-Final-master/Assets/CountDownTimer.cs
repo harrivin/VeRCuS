@@ -41,7 +41,7 @@ public class CountDownTimer : MonoBehaviour
             StopCoroutine("LoseTime");
            // StopCoroutine("Time");
             countdownText.text = "Times Up!";
-            Application.LoadLevel("VR Scene 1");
+            Application.LoadLevel("GO Scene");
         }
     }
 
