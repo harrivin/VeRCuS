@@ -94,6 +94,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\CountDownTimer.cs" />
+    <Compile Include="Assets\DDObject.cs" />
+    <Compile Include="Assets\DDReticle.cs" />
+    <Compile Include="Assets\DragDropHandler.cs" />
     <Compile Include="Assets\GoogleVR\DemoScenes\ControllerDemo\ControllerDebugInfo.cs" />
     <Compile Include="Assets\GoogleVR\DemoScenes\ControllerDemo\ControllerDemoManager.cs" />
     <Compile Include="Assets\GoogleVR\DemoScenes\HeadsetDemo\FPS.cs" />
