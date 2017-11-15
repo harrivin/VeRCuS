@@ -16,7 +16,7 @@ public class level1movelevel : MonoBehaviour {
     }
     public void movelevel()
     {
-        Debug.Log("enter movelevel function");
+       // Debug.Log("enter movelevel function");
         if (Input.GetButton("Fire3"))
         {
             Application.LoadLevel("VR Scene 2");
@@ -25,7 +25,7 @@ public class level1movelevel : MonoBehaviour {
         }
         else
         {
-            Debug.Log("not clicking");
+         //   Debug.Log("not clicking");
             //this.gameObject.SetActive(true);
         }
     }

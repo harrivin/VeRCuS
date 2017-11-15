@@ -2,25 +2,50 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class score : MonoBehaviour {
+public class score : MonoBehaviour
+{
     public static int scoreg;
+    public int score1 = 0;
     Text text;
 
-
-	// Use this for initialization
-	void Start () {
-        text = GetComponent<Text>();
-        
-
-	}
-    void OnLevelWasLoaded(int level)
+    void OnEnable()
     {
-        if (level == 0)
-            scoreg = 0;
+        Debug.Log("OnEnable called");
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
-        // Update is called once per frame
-        void Update () {
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        scoreg = 0;
+
+        Debug.Log("OnSceneLoaded: " + scene.name);
+        Debug.Log(mode);
+    }
+
+    // Use this for initialization
+    void Start()
+    {
+        text = GetComponent<Text>();
+
+
+    }
+    //void OnLevelWasLoaded(int level)
+    //{
+    //    if (level == 0)
+    //        scoreg = 0;
+    //    //     else if (level == 1)
+    //    //        scoreg = scoreg + score1;
+    //}
+
+    //// Update is called once per frame
+    void Update()
+    {
         text.text = "Score : " + scoreg;
-	}
+    }
+    void OnDisable()
+    {
+        Debug.Log("OnDisable");
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
 }

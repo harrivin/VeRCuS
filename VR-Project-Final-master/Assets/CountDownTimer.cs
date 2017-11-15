@@ -16,21 +16,28 @@ public class CountDownTimer : MonoBehaviour
         StartCoroutine("LoseTime");
         //StartCoroutine("Time");
     }
-
-    //private void fixedupdate()
+    //void OnLevelWasLoaded(int level)
     //{
-    //    if (score.scoreg > 0)
+    //    if (level == 0)
     //    {
-    //        startcoroutine("time");
-    //    }
-    //    else if (score.scoreg <= 0)
-    //    {
-    //        stopcoroutine("time");
+    //        StartCoroutine("LoseTime");
     //    }
     //}
 
-    // Update is called once per frame
-    void Update()
+            //private void fixedupdate()
+            //{
+            //    if (score.scoreg > 0)
+            //    {
+            //        startcoroutine("time");
+            //    }
+            //    else if (score.scoreg <= 0)
+            //    {
+            //        stopcoroutine("time");
+            //    }
+            //}
+
+            // Update is called once per frame
+            void Update()
     {
         countdownText.text = ("Time Left = " + timeLeft);
    

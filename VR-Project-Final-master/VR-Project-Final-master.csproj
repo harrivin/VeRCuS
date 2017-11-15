@@ -142,15 +142,19 @@
     <Compile Include="Assets\camerafacingbillboard.cs" />
     <Compile Include="Assets\characterController.cs" />
     <Compile Include="Assets\chase.cs" />
+    <Compile Include="Assets\colliderscript.cs" />
+    <Compile Include="Assets\countdowntimerl1.cs" />
     <Compile Include="Assets\detecthit.cs" />
     <Compile Include="Assets\goscript.cs" />
     <Compile Include="Assets\health.cs" />
     <Compile Include="Assets\level1movelevel.cs" />
     <Compile Include="Assets\level1movelevell.cs" />
     <Compile Include="Assets\minimap.cs" />
-    <Compile Include="Assets\moveup.cs" />
     <Compile Include="Assets\pickupsphere.cs" />
+    <Compile Include="Assets\positioncheck.cs" />
     <Compile Include="Assets\score.cs" />
+    <Compile Include="Assets\score1.cs" />
+    <Compile Include="Assets\score2.cs" />
     <Compile Include="Assets\text1.cs" />
     <Compile Include="Assets\text2.cs" />
   </ItemGroup>
