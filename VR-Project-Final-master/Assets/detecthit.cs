@@ -16,7 +16,7 @@ public class detecthit : MonoBehaviour {
         if (other.gameObject.tag != opponent) return;
 
         healthbar.value -= 25;
-        Debug.Log("Hit");
+        //Debug.Log("Hitplayer25");
            //Vector3 direction1 = player.position - this.transform.position;
            // direction1.y = 0;
             //float angle1 = Vector3.Angle(direction1, head.up);

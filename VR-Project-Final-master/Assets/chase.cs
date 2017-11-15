@@ -10,8 +10,9 @@ public class chase : MonoBehaviour {
     public GameObject sphere;
     public GameObject enemy1;
     public GameObject enemy2;
+    public GameObject health;
     public string opponent1;
-
+    
     public string enemynumber;
 
     public Slider healthbar;
@@ -34,8 +35,8 @@ public class chase : MonoBehaviour {
     {
         if (other.gameObject.tag != opponent1) return;
 
-        healthbar.value -= 25;
-        Debug.Log("Hit");
+        healthbar.value -= 50;
+        //Debug.Log("Hitopponent50");
         Vector3 direction1 = player.position - this.transform.position;
         direction1.y = 0;
         //float angle = Vector3.Angle(direction1, head.up);
@@ -45,6 +46,7 @@ public class chase : MonoBehaviour {
 
         if (healthbar.value <= 0)
         {
+           
             anim.SetBool("isDead", true);
         }
     }
@@ -55,12 +57,33 @@ public class chase : MonoBehaviour {
         opponent = GameObject.Find("FPSController");
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         anim.speed = 1.5f;
+       
   
 	}
 
     // Update is called once per frame
     void Update()
     {
+        if (this.gameObject.name == "Enemy011" && healthbar.value <= 0)
+        {
+            health.transform.parent = null;
+            health.SetActive(true);
+        }
+        else if (this.gameObject.name == "Enemy212" && healthbar.value <= 0)
+        {
+            health.transform.parent = null;
+            health.SetActive(true);
+        }
+        else if (this.gameObject.name == "Enemy421" && healthbar.value <= 0)
+        {
+            health.transform.parent = null;
+            health.SetActive(true);
+        }
+        else if (this.gameObject.name == "Enemy622" && healthbar.value <= 0)
+        {
+            health.transform.parent = null;
+            health.SetActive(true);
+        }
         //if(healthbar.value == healthbar.value-25)
         //{
         //    Vector3 direction1 = player.position - this.transform.position;
@@ -69,12 +92,18 @@ public class chase : MonoBehaviour {
         //}
         if (healthbar.value <= 0)
         {
+           
             StartCoroutine(waitDeath());
             StopCoroutine(waitDeath());
+          
             enemy1.transform.parent = null;
             enemy1.SetActive(true);
             enemy2.transform.parent = null;
             enemy2.SetActive(true);
+            health.transform.parent = null;
+            health.SetActive(true);
+
+
             return;
             //this.gameObject.SetActive = false;
 
@@ -137,7 +166,7 @@ public class chase : MonoBehaviour {
     }
     IEnumerator waitDeath()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         gameObject.SetActive(false);
     }
 }

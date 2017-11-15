@@ -141,6 +141,7 @@
     <Compile Include="Assets\chase.cs" />
     <Compile Include="Assets\detecthit.cs" />
     <Compile Include="Assets\goscript.cs" />
+    <Compile Include="Assets\health.cs" />
     <Compile Include="Assets\minimap.cs" />
     <Compile Include="Assets\pickupsphere.cs" />
     <Compile Include="Assets\score.cs" />

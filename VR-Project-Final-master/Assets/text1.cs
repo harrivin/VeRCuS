@@ -14,6 +14,8 @@ public class text1 : MonoBehaviour
 
         txt = gameObject.GetComponent<Text>();
 
+        //yield return new WaitForSeconds(time);
+        //txt.text = "Press A to Attack";
         yield return new WaitForSeconds(time);
         txt.text = "";
     }
