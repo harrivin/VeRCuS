@@ -22,9 +22,9 @@ MonoBehaviour:
     width: 1424
     height: 769
   m_MinSize: {x: 683, y: 442}
-  m_MaxSize: {x: 18008, y: 14042}
+  m_MaxSize: {x: 18006, y: 14021}
   vertical: 0
-  controlID: 1923
+  controlID: 391
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -124,7 +124,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 1924
+  controlID: 367
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -379,9 +379,9 @@ MonoBehaviour:
     height: 748
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ba300000
-    m_LastClickedID: 0
-    m_ExpandedIDs: 2ec0ffffeec4ffffcacbffffd0cbffffd2cbffffd4cbffff28cdffffd8fbffff00000000686a00006c6a0000
+    m_SelectedIDs: 584d0000064b0000284d00002c4c00006e4c0000b84b0000cc4a0000
+    m_LastClickedID: 19148
+    m_ExpandedIDs: eed9ffffd8fbffff000000001a4d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -400,7 +400,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 9}
     m_SearchString: 
   m_ExpandedScenes:
-  - VR Scene 1
+  - VR Scene
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -424,10 +424,10 @@ MonoBehaviour:
     y: 0
     width: 314
     height: 769
-  m_MinSize: {x: 277, y: 342}
-  m_MaxSize: {x: 10002, y: 14042}
+  m_MinSize: {x: 277, y: 321}
+  m_MaxSize: {x: 10000, y: 14021}
   vertical: 1
-  controlID: 1820
+  controlID: 345
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -563,8 +563,8 @@ MonoBehaviour:
     y: 359
     width: 314
     height: 410
-  m_MinSize: {x: 232, y: 271}
-  m_MaxSize: {x: 10002, y: 10021}
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -672,9 +672,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: ba300000
-    m_LastClickedInstanceID: 12474
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: 584d0000064b0000284d00002c4c00006e4c0000b84b0000cc4a0000
+    m_LastClickedInstanceID: 19800
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 523300002e310000202c000052370000783c0000c22500005e260000662d0000e4680000722a00007a2a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
