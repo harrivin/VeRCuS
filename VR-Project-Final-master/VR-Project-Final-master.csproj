@@ -152,12 +152,16 @@
     <Compile Include="Assets\level1movelevell.cs" />
     <Compile Include="Assets\minimap.cs" />
     <Compile Include="Assets\pickupsphere.cs" />
+    <Compile Include="Assets\pickuptraversal.cs" />
+    <Compile Include="Assets\pickuptraversalpost.cs" />
+    <Compile Include="Assets\pickuptraversalpre.cs" />
     <Compile Include="Assets\positioncheck.cs" />
     <Compile Include="Assets\score.cs" />
     <Compile Include="Assets\score1.cs" />
     <Compile Include="Assets\score2.cs" />
     <Compile Include="Assets\text1.cs" />
     <Compile Include="Assets\text2.cs" />
+    <Compile Include="Assets\traversal.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GoogleVR\Distortion\GvrDistortion.cginc" />
