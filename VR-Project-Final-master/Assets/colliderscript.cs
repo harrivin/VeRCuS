@@ -37,8 +37,8 @@ public class colliderscript : MonoBehaviour
         k++;
         // if (col.gameObject.name == "Sphere" || col.gameObject.name == "Sphere1" || col.gameObject.name == "Sphere2" || col.gameObject.name == "Sphere3" || col.gameObject.name == "Sphere4" || col.gameObject.name == "Sphere5" || col.gameObject.name == "Sphere6")
 
-        Debug.Log(k);
-        Debug.Log("wogoo");
+       // Debug.Log(k);
+       // Debug.Log("wogoo");
 
 
         if (cubes[0].GetComponent<colliderscript>().k == 1 && cubes[1].GetComponent<colliderscript>().k == 1 && cubes[2].GetComponent<colliderscript>().k == 1 && cubes[3].GetComponent<colliderscript>().k == 1 && cubes[4].GetComponent<colliderscript>().k == 1 && cubes[5].GetComponent<colliderscript>().k == 1 && cubes[6].GetComponent<colliderscript>().k == 1)
@@ -58,7 +58,7 @@ public class colliderscript : MonoBehaviour
     {
         if (other.gameObject.tag != opponent1) return;
         k--;
-        Debug.Log(k);
+       // Debug.Log(k);
         if (cubes[0].GetComponent<colliderscript>().k == 1 && cubes[1].GetComponent<colliderscript>().k == 1 && cubes[2].GetComponent<colliderscript>().k == 1 && cubes[3].GetComponent<colliderscript>().k == 1 && cubes[4].GetComponent<colliderscript>().k == 1 && cubes[5].GetComponent<colliderscript>().k == 1 && cubes[6].GetComponent<colliderscript>().k == 1)
         {
 

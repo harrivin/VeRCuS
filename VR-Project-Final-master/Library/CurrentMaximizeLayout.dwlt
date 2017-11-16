@@ -22,9 +22,9 @@ MonoBehaviour:
     width: 1424
     height: 769
   m_MinSize: {x: 683, y: 442}
-  m_MaxSize: {x: 18006, y: 14021}
+  m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 391
+  controlID: 962
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -82,14 +82,14 @@ MonoBehaviour:
       width: 880
       height: 334
     m_Scale: {x: 1.1592739, y: 1.1592739}
-    m_Translation: {x: 424.97852, y: 191.06726}
+    m_Translation: {x: 426.1858, y: 191.06726}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -366.59027
+      x: -367.63168
       y: -164.81633
       width: 759.0959
       height: 288.1114
@@ -124,7 +124,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 367
+  controlID: 938
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -379,9 +379,9 @@ MonoBehaviour:
     height: 748
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 584d0000064b0000284d00002c4c00006e4c0000b84b0000cc4a0000
-    m_LastClickedID: 19148
-    m_ExpandedIDs: eed9ffffd8fbffff000000001a4d0000
+    m_SelectedIDs: 8e2d0000
+    m_LastClickedID: 0
+    m_ExpandedIDs: d8fbffff00000000ec330000bc3400002435000096350000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -400,7 +400,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 9}
     m_SearchString: 
   m_ExpandedScenes:
-  - VR Scene
+  - VR Scene 1
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -424,10 +424,10 @@ MonoBehaviour:
     y: 0
     width: 314
     height: 769
-  m_MinSize: {x: 277, y: 321}
-  m_MaxSize: {x: 10000, y: 14021}
+  m_MinSize: {x: 277, y: 342}
+  m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 345
+  controlID: 963
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -563,8 +563,8 @@ MonoBehaviour:
     y: 359
     width: 314
     height: 410
-  m_MinSize: {x: 230, y: 250}
-  m_MaxSize: {x: 10000, y: 10000}
+  m_MinSize: {x: 232, y: 271}
+  m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -617,9 +617,9 @@ MonoBehaviour:
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 111}
-    m_SelectedIDs: c4250000
-    m_LastClickedID: 9668
-    m_ExpandedIDs: 00000000c425000008260000222600006c26000048280000762a0000c42a0000ee2a0000122b00006c2b0000762f0000d22f0000043000001031000000ca9a3bffffff7f
+    m_SelectedIDs: c6250000
+    m_LastClickedID: 9670
+    m_ExpandedIDs: 00000000c62500000a260000242600006e2600004a280000782a0000c62a0000f02a0000142b00006e2b0000782f0000d42f0000063000001231000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -647,7 +647,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c425000008260000222600006c26000048280000762a0000c42a0000ee2a0000122b00006c2b0000762f0000d22f0000043000001031000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000c62500000a260000242600006e2600004a280000782a0000c62a0000f02a0000142b00006e2b0000782f0000d42f0000063000001231000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -672,9 +672,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 584d0000064b0000284d00002c4c00006e4c0000b84b0000cc4a0000
-    m_LastClickedInstanceID: 19800
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 8e2d0000
+    m_LastClickedInstanceID: 11662
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 523300002e310000202c000052370000783c0000c22500005e260000662d0000e4680000722a00007a2a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -699,6 +699,6 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 4226}
+    m_ScrollPosition: {x: 0, y: 1090}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 153
