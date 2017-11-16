@@ -29,13 +29,21 @@ public class DDObject : MonoBehaviour, DragDropHandler
         public void HandleGazeTriggerStart()
     
     {
-        IsHeld = true;
-        GetComponent<Renderer>().material.color = Color.blue;
+       // if (Input.GetButton("Fire1"))
+       // {
+          //  Debug.Log("fire1");
+            IsHeld = true;
+            GetComponent<Renderer>().material.color = Color.blue;
+        //}
     }
     public void HandleGazeTriggerEnd()
     {
-        IsHeld = false;
-        GetComponent<Renderer>().material.color = Color.yellow;
+        //if (Input.GetButton("Fire2"))
+        //{
+         //   Debug.Log("fire2");
+            IsHeld = false;
+            GetComponent<Renderer>().material.color = Color.yellow;
+        //}
     }
     // Use this for initialization
     void Start()
@@ -57,6 +65,7 @@ public class DDObject : MonoBehaviour, DragDropHandler
     // Update is called once per frame
     void Update()
     {
+        
         if (IsHeld)
         {
             Ray ray = new Ray(Reticle.transform.position, Reticle.transform.forward);

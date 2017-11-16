@@ -5,12 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class countdowntimerl1 : MonoBehaviour
 {
-    public static int timer;
-    public static int ctimer;
-    public int timeLeft = 0;
+    //public static int timer = 0;
+    //public static int ctimer;
+    public int timeLeft1;
 
     public Text countdownText;
-    public string LevelToLoad;
+   // public string LevelToLoad;
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
@@ -23,16 +23,15 @@ public class countdowntimerl1 : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        timer++;
-        Debug.Log(timer);
-        if(timer>1)
-        {
-            timeLeft = ctimer;
-            Debug.Log(ctimer);
-            Debug.Log(timeLeft);
+     //   timer++;
+       // if(timer>1)
+       // {
+        //    timeLeft1 = ctimer;
+       //     Debug.Log(ctimer);
+        //    Debug.Log(timeLeft1);
             score.scoreg = score.scoreg - 350;
-        }
-        StartCoroutine("LoseTime");
+       // }
+        StartCoroutine("LoseTimel");
         //StartCoroutine("Time");
     }
     //void OnLevelWasLoaded(int level)
@@ -58,41 +57,41 @@ public class countdowntimerl1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        countdownText.text = ("Time Left = " + timeLeft);
+        countdownText.text = ("Time Left = " + timeLeft1);
 
 
 
-        if (timeLeft <= 0)
+        if (timeLeft1 <= 0)
         {
-            StopCoroutine("LoseTime");
+            StopCoroutine("LoseTimel");
             // StopCoroutine("Time");
             countdownText.text = "Times Up!";
             Application.LoadLevel("GO Scene");
         }
     }
 
-    IEnumerator LoseTime()
+    IEnumerator LoseTimel()
     {
         while (true)
         {
             yield return new WaitForSeconds(1);
-            timeLeft--;
+            timeLeft1--;
             if (score.scoreg > 0)
             {
                 score.scoreg--;
             }
-            if (PickUp.pickupcount > 6)
-            {
-                score.scoreg += timeLeft;
-                StopCoroutine("LoseTime");
+            //if (PickUp.pickupcount > 6)
+            //{
+            //    score.scoreg += timeLeft1;
+            //    StopCoroutine("LoseTime");
 
-            }
+            //}
 
         }
     }
     void OnDisable()
     {
-        ctimer = timeLeft;
+        //ctimer = timeLeft1;
         Debug.Log("OnDisable");
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }

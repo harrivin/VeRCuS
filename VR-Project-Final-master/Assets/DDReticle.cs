@@ -106,8 +106,11 @@ public class DDReticle : MonoBehaviour, IGvrGazePointer
     public void OnGazeStart(Camera camera, GameObject targetObject, Vector3 intersectionPosition,
                             bool isInteractive)
     {
-        gazedAt = targetObject;
-        SetGazeTarget(intersectionPosition, isInteractive);
+      //  if (Input.GetButton("Fire1"))
+       // {
+            gazedAt = targetObject;
+            SetGazeTarget(intersectionPosition, isInteractive);
+        //}
     }
 
     /// Called every frame the user is still looking at a valid GameObject. This
@@ -131,10 +134,13 @@ public class DDReticle : MonoBehaviour, IGvrGazePointer
     /// previously looked at.
     public void OnGazeExit(Camera camera, GameObject targetObject)
     {
-        gazedAt = null;
-        reticleDistanceInMeters = kReticleDistanceMax;
-        reticleInnerAngle = kReticleMinInnerAngle;
-        reticleOuterAngle = kReticleMinOuterAngle;
+        //if (Input.GetButton("Fire2"))
+       // {
+            gazedAt = null;
+            reticleDistanceInMeters = kReticleDistanceMax;
+            reticleInnerAngle = kReticleMinInnerAngle;
+            reticleOuterAngle = kReticleMinOuterAngle;
+       // }
     }
 
     /// Called when a trigger event is initiated. This is practically when
